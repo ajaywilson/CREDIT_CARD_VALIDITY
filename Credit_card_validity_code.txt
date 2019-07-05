@@ -1,0 +1,42 @@
+T= int(input())
+
+for i in range(T):
+
+    sum=0
+
+    a=input()
+
+    b=a.split()
+
+    c=b[0]
+  
+   for j in range(len(c)):
+
+       if(((j)%2)!=0):
+   
+       f=int(c[j])
+   
+       f=f*2
+         
+   if f>10:
+   
+        d=c[j].split()
+    
+        e=d[0]
+      
+        for k in range(len(e)):
+    
+           
+       sum =sum+int(e[k])
+      
+   else: 
+        
+          sum=sum + int(c[j])
+ 
+       if((sum%10)==0):
+  
+            print("VALID", end ="\n")
+
+       else:
+
+            print("INVALID", end = "\n")
